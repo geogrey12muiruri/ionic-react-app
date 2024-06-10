@@ -1,6 +1,7 @@
 import React from 'react';
 import { IonRouterOutlet, IonTabBar, IonTabButton, IonTabs, IonIcon, IonLabel } from '@ionic/react';
 import { Route, Redirect } from 'react-router-dom';
+import { GoBell } from "react-icons/go";
 import { homeOutline, searchOutline, personOutline } from 'ionicons/icons';
 import Patientdash from './PatientPage';
 import PatientTab1 from './PatientTab1';
@@ -11,7 +12,7 @@ const PatientTabs = () => {
   return (
     <IonTabs>
       <IonRouterOutlet>
-        <Route path="/patients/home" component={Patientdash} exact />
+      <Route path="/patients/home" component={Patientdash} exact />
         <Route path="/patients/tab1" component={PatientTab1} exact />
         <Route path="/patients/tab2" component={PatientTab2} exact />
         <Route path='/patients/tab3' component={PatientTab3} exact />
@@ -23,8 +24,8 @@ const PatientTabs = () => {
           <IonLabel>Home</IonLabel>
         </IonTabButton>
         <IonTabButton tab="tab1" href="/patients/tab1">
-          <IonIcon icon={searchOutline} />
-          <IonLabel>Tab 1</IonLabel>
+          <IonIcon icon={GoBell} color='primary'/>
+          <IonLabel>Notifications</IonLabel>
         </IonTabButton>
         <IonTabButton tab="tab2" href="/patients/tab2">
           <IonIcon icon={personOutline} />

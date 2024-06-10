@@ -4,6 +4,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import Signup from './pages/auth/Signup';
 import { Route } from 'react-router-dom';
 import "@ionic/react/css/core.css";
+import 'swiper/swiper-bundle.css';
 
 import Page2 from './pages/patients/Patientdash';
 import Page3 from './pages/doctors/DoctorDash';

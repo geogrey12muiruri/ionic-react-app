@@ -40,7 +40,7 @@ const WelcomePage = () => {
   </h2>
   <p className="text-orange-500">{getGreeting()}, sign up or register to get started.</p>
 </IonText>
-      <div className="button_container slide-up">
+      <div className="button_container">
         <IonButton
           shape="round"
           size="default"

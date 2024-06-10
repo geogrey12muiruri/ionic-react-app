@@ -29,9 +29,15 @@ const LoginPage = () => {
 
       const data = await res.json();
       localStorage.setItem('user', JSON.stringify(data));
+      // console logs the user object
+
+      const user = JSON.parse(localStorage.getItem('user'));
+      console.log(user);
+
+     
       setToastMessage("Logged in successfully");
       setShowToast(true);
-      history.push('/landing');
+      history.push('/patients');
     } catch (error) {
       setToastMessage(error.message);
       setShowToast(true);

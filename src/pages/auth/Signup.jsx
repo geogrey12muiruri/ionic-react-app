@@ -65,7 +65,7 @@ const SignUpPage = () => {
           history.push('/patients');
           break;
         default:
-          history.push('/landing');
+          history.push('/patients');
       }
     } catch (error) {
       console.error(error);
